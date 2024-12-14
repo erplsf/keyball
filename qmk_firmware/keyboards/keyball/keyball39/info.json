@@ -6,9 +6,7 @@
     },
     "manufacturer": "Yowkees",
     "keyboard_name": "Keyball39",
-    "rgblight": {
-        "driver": "ws2812"
-    },
+    "rgblight": {},
     "layouts": {
       "LAYOUT_no_ball": {
         "layout": [
