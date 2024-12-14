@@ -15,7 +15,10 @@ K20,   K21,   K22,   K23,   K24,          K25,   K26,   K27,   K28,   K29, \
 XXX,   XXX,   XXX,   K32,   K33,   K34,   K35,   K36,   XXX \
 )
 
+// needed for building more layers
+// FIXME: why do we need to undefine previous value?
 #undef LAYER_STATE_8BIT
 #define LAYER_STATE_32BIT
 
+// needed to make RGB work
 #define RGB_DI_PIN WS2812_DI_PIN
