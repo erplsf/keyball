@@ -22,3 +22,9 @@ XXX,   XXX,   XXX,   K32,   K33,   K34,   K35,   K36,   XXX \
 
 // needed to make RGB work
 #define RGB_DI_PIN WS2812_DI_PIN
+
+// disable split detection - should help with sleeping issues
+#undef SPLIT_USB_DETECT
+
+// right half is the master
+/* #define MASTER_RIGHT */
