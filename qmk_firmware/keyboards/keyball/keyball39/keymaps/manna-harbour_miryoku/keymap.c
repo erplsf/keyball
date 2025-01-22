@@ -15,3 +15,18 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
+#include "quantum.h"
+#include "manna-harbour_miryoku.h"
+
+layer_state_t layer_state_set_user(layer_state_t state) {
+    switch (get_highest_layer(state)) {
+        case U_GAME:
+            rgblight_setrgb(RGB_ORANGE);
+            rgblight_enable_noeeprom();
+            break;
+        default:
+            rgblight_disable_noeeprom();
+    }
+    return state;
+}
